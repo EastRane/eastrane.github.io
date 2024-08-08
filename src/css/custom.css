@@ -91,3 +91,31 @@ table.mods td:first-child {
 .commands td:first-child {
   white-space: nowrap;
 }
+
+.expand {
+  width: 100%;
+}
+
+.image-right {
+  display: flex;
+  align-items: center;
+}
+.image-right > div {
+  flex: 1;
+}
+.image-right > div:first-child {
+  padding-right: 20px;
+}
+@media (max-width: 996px) {
+  .image-right {
+    display: block;
+  }
+
+  .image-right > div:first-child {
+    padding-right: 0;
+  }
+}
+
+.image-right .expand {
+  width: 90%;
+}
