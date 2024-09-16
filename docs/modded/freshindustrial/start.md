@@ -29,7 +29,7 @@
         :::
     </div>
     <div>
-        <img className="expand" src="/img/modded/freshindustrial/prism.png" />
+        <img className="expand" src="/img/modded/freshindustrial/launcher.png" />
     </div>
 </div>
 
