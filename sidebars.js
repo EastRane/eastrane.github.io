@@ -47,6 +47,34 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '🏰 Fantasy Medieval',
+          link: {
+            type: 'generated-index',
+            title: '🏰 Fantasy Medieval',
+            description: 'All pages dedicating to details about Fantasy Medieval server.',
+            slug: '/modded/fantasymedieval',
+          },
+          collapsed: false,
+          items:[
+            {
+              type: 'doc',
+              id: 'modded/fantasymedieval/start',
+              label: '🏰 Начать игру',
+            },
+            {
+              type: 'doc',
+              id: 'modded/fantasymedieval/mods',
+              label: '🛠️ Список модов',
+            },
+            {
+              type: 'doc',
+              id: 'modded/fantasymedieval/commands',
+              label: '💻 Команды',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: '🍇 FreshIndustrial',
           link: {
             type: 'generated-index',
@@ -54,7 +82,7 @@ const sidebars = {
             description: 'All pages dedicating to details about FreshIndustrial server.',
             slug: '/modded/freshindustrial',
           },
-          collapsed: false,
+          collapsed: true,
           items:[
             {
               type: 'doc',
