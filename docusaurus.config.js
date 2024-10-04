@@ -70,7 +70,7 @@ const config = {
           selector: '.expand',
           background: {
             light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)'
+            dark: 'rgb(27, 27, 29)'
           },
           config: {
             // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
