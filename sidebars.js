@@ -23,7 +23,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         title: '🎊 Events',
-        description: 'All pages dedicating to details about events held or in progress.',
+        description: 'All pages dedicated to details about events that have been held or are in progress.',
         slug: '/events',
       },
       collapsed: false,
@@ -40,7 +40,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         title: '🕹️ Modded',
-        description: 'All pages dedicating to details about Modded server.',
+        description: 'All pages dedicated to the details of modded servers.',
         slug: '/modded',
       },
       collapsed: false,
@@ -51,7 +51,7 @@ const sidebars = {
           link: {
             type: 'generated-index',
             title: '🏰 Fantasy Medieval',
-            description: 'All pages dedicating to details about Fantasy Medieval server.',
+            description: 'All pages dedicated to the details of the Fantasy Medieval server.',
             slug: '/modded/fantasymedieval',
           },
           collapsed: false,
@@ -79,7 +79,7 @@ const sidebars = {
           link: {
             type: 'generated-index',
             title: '🍇 FreshIndustrial',
-            description: 'All pages dedicating to details about FreshIndustrial server.',
+            description: 'All pages dedicated to the details of the FreshIndustrial server.',
             slug: '/modded/freshindustrial',
           },
           collapsed: true,
@@ -123,7 +123,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         title: '🧩 Plugins',
-        description: 'All pages dedicating to details about my plugins.',
+        description: 'All pages dedicated to details about my plugins.',
         slug: '/plugins',
       },
       collapsed: false,
