@@ -35,3 +35,4 @@
 </table>
 
 The `eastzombies.admin` permission grants access to all commands of the plugin.
+The `eastzombies.help` permission grants access to commands list of the plugin.

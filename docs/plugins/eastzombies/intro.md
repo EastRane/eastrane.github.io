@@ -10,11 +10,12 @@ In essence, it turns your Minecraft world into a thrilling survival scenario whe
 
 To run EastZombies on your Minecraft server, you'll need:
 
-- Minecraft server software: Paper (or its fork) 1.20 or higher
-- Java: Version 17 or higher
+- Minecraft server software: Paper (or its fork) 1.21.1 or higher
+- Java: Version 21 or higher
 
 ## Download
 
 You can download the plugin from the following sources:
 - [Modrinth](https://modrinth.com/plugin/eastzombies)
+- [SpigotMC](https://www.spigotmc.org/resources/eastzombies.118748/)
 - [GitHub releases](https://github.com/EastRane/EastZombies/releases)

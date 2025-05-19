@@ -9,7 +9,7 @@
 # Available options are located in the 'languages' folder within the plugin directory.
 language: en_US
 
-# If true, a title will be displayed to all players when a new day begins
+# If true, a title will be displayed to all players when a new day begins.
 broadcast_day: true
 
 player:
@@ -22,11 +22,24 @@ player:
   # If true, players will respawn at their death location when they first die and become a zombie.
   # Also, their bed respawn location (set as a human) will be reset.
   reset_respawn_on_first_death: true
+  # For those who want zombies to respawn at specific location instead of their death location.
+  # Only works with reset_respawn_on_first_death enabled as well.
+  # -1 to disable
+  zombie_respawn_location:
+    x: -1
+    y: -1
+    z: -1
   flesh:
     # If true, zombie players will drop rotten flesh upon death.
     drop_flesh: true
     # The amount of rotten flesh dropped.
     amount: 4
+  # Player's invulnerability after respawn.
+  # Duration in ticks (0 to disable).
+  respawn_invulnerability: 60
+  # Player's invulnerability after the start of the event.
+  # Duration in ticks (0 to disable).
+  start_invulnerability: 6000
   # Effects applied to zombie players.
   effects:
     enabled: true
@@ -45,6 +58,54 @@ player:
     - sr
     - skin
     - skins
+
+teams:
+  # You need Simple Voice Chat plugin for these features to work.
+  voicechat:
+    # If true, two voice groups "Humans" and "Zombies" will be created when the server starts.
+    # All voicechat options won't work unless persistent_groups is true.
+    # Changing this option requires a server restart.
+    persistent_groups: true
+    # If true, players will not be able to create groups.
+    block_groups_creation: true
+    join:
+      # If true, a human player will automatically join the "Humans" group upon entering the server.
+      on_join: true
+      # If true, a player will automatically join the "Zombies" group upon every death.
+      on_death: true
+      # If true, humans cannot join "Zombies" group and zombies cannot join "Humans" group.
+      team_only: true
+  # Changing this options requires a server restart.
+  friendly_fire:
+    # If true, zombies could damage other zombies.
+    zombies: false
+    # If true, humans could damage other humans.
+    humans: false
+
+world:
+  # Initial world border will be set when using /ez start.
+  border:
+    # Initial radius of the world border in blocks (0 to disable).
+    initial_radius: 500
+    # X coordinate of the world border center.
+    center_x: 0
+    # Z coordinate of the world border center.
+    center_z: 0
+    shrink:
+      # If true, the world border will shrink over time.
+      enabled: false
+      # The day on which the border starts shrinking.
+      start_day: 10
+      # Interval between each shrink in seconds.
+      interval: 1200
+      # Amount of blocks to shrink the radius by each interval.
+      amount: 50
+      # Duration of the shrinking process in seconds.
+      duration: 300
+      # Minimum radius the border can shrink to.
+      min_radius: 250
+  # If true, a lightning will strike at a place where player became a zombie
+  lightning: true
 
 features:
   target:
@@ -70,6 +131,11 @@ features:
     at_night: true
     # Damage in half-hearts that zombie players take from sunlight.
     damage: 4
+    protection:
+      # If true, equipped helmets will protect zombies from sunlight damage
+      helmet: true
+      # Amount of durability helmets lose every 2 seconds when exposed to sunlight
+      durability_loss: 10
   hunger:
     # If true, zombie players' attacks will give hunger effect to human players.
     enabled: true
@@ -88,6 +154,7 @@ features:
     at_night: false
   zombie_compass:
     # If true, zombie compass recipe will be available.
+    # This compass lets zombies see nearest human's location.
     enabled: true
     # The day on which this feature activates.
     start_day: 13

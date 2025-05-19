@@ -34,85 +34,85 @@ const sidebars = {
       value: '<div style="margin: var(--ifm-hr-margin-vertical-side)">',
       defaultStyle: true,
     },
-    {
-      type: 'category',
-      label: '🕹️ Modded',
-      link: {
-        type: 'generated-index',
-        title: '🕹️ Modded',
-        description: 'All pages dedicated to the details of modded servers.',
-        slug: '/modded',
-      },
-      collapsed: false,
-      items: [
-        {
-          type: 'category',
-          label: '🏰 Fantasy Medieval',
-          link: {
-            type: 'generated-index',
-            title: '🏰 Fantasy Medieval',
-            description: 'All pages dedicated to the details of the Fantasy Medieval server.',
-            slug: '/modded/fantasymedieval',
-          },
-          collapsed: false,
-          items:[
-            {
-              type: 'doc',
-              id: 'modded/fantasymedieval/start',
-              label: '🏰 Начать игру',
-            },
-            {
-              type: 'doc',
-              id: 'modded/fantasymedieval/mods',
-              label: '🛠️ Список модов',
-            },
-            {
-              type: 'doc',
-              id: 'modded/fantasymedieval/commands',
-              label: '💻 Команды',
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: '🍇 FreshIndustrial',
-          link: {
-            type: 'generated-index',
-            title: '🍇 FreshIndustrial',
-            description: 'All pages dedicated to the details of the FreshIndustrial server.',
-            slug: '/modded/freshindustrial',
-          },
-          collapsed: true,
-          items:[
-            {
-              type: 'doc',
-              id: 'modded/freshindustrial/start',
-              label: '🍇 Начать игру',
-            },
-            {
-              type: 'doc',
-              id: 'modded/freshindustrial/faq',
-              label: '❓ FAQ',
-            },
-            {
-              type: 'doc',
-              id: 'modded/freshindustrial/servermods',
-              label: '🔐 Серверные моды',
-            },
-            {
-              type: 'doc',
-              id: 'modded/freshindustrial/clientmods',
-              label: '🛠️ Клиентские моды',
-            },
-            {
-              type: 'doc',
-              id: 'modded/freshindustrial/commands',
-              label: '💻 Команды',
-            },
-          ],
-        },
-      ],
-    },
+//    {
+//      type: 'category',
+//      label: '🕹️ Modded',
+//      link: {
+//        type: 'generated-index',
+//        title: '🕹️ Modded',
+//        description: 'All pages dedicated to the details of modded servers.',
+//        slug: '/modded',
+//      },
+//      collapsed: false,
+//      items: [
+//        {
+//          type: 'category',
+//          label: '🏰 Fantasy Medieval',
+//          link: {
+//            type: 'generated-index',
+//            title: '🏰 Fantasy Medieval',
+//            description: 'All pages dedicated to the details of the Fantasy Medieval server.',
+//            slug: '/modded/fantasymedieval',
+//          },
+//          collapsed: false,
+//          items:[
+//            {
+//              type: 'doc',
+//              id: 'modded/fantasymedieval/start',
+//              label: '🏰 Начать игру',
+//            },
+//            {
+//              type: 'doc',
+//              id: 'modded/fantasymedieval/mods',
+//              label: '🛠️ Список модов',
+//            },
+//            {
+//              type: 'doc',
+//              id: 'modded/fantasymedieval/commands',
+//              label: '💻 Команды',
+//            },
+//          ],
+//        },
+//        {
+//          type: 'category',
+//          label: '🍇 FreshIndustrial',
+//          link: {
+//            type: 'generated-index',
+//            title: '🍇 FreshIndustrial',
+//            description: 'All pages dedicated to the details of the FreshIndustrial server.',
+//            slug: '/modded/freshindustrial',
+//          },
+//          collapsed: true,
+//          items:[
+//            {
+//              type: 'doc',
+//              id: 'modded/freshindustrial/start',
+//              label: '🍇 Начать игру',
+//            },
+//            {
+//              type: 'doc',
+//              id: 'modded/freshindustrial/faq',
+//              label: '❓ FAQ',
+//            },
+//            {
+//              type: 'doc',
+//              id: 'modded/freshindustrial/servermods',
+//              label: '🔐 Серверные моды',
+//            },
+//            {
+//              type: 'doc',
+//              id: 'modded/freshindustrial/clientmods',
+//              label: '🛠️ Клиентские моды',
+//            },
+//            {
+//              type: 'doc',
+//              id: 'modded/freshindustrial/commands',
+//              label: '💻 Команды',
+//            },
+//          ],
+//        },
+//      ],
+//    },
   ],
 
   publicSidebar: [
